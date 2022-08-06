@@ -1,0 +1,9 @@
+create database examWork2;
+--В SQL Создать таблицу "Новости" (id, заголовок новости, текст новости, время публикации)
+
+create table news (
+                      id serial not null unique primary key,
+                      mainNews varchar (100) not null ,
+                      text varchar (500) not null,
+                      time timestamp default current_timestamp
+);
